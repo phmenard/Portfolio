@@ -11,7 +11,6 @@ class Header extends React.Component {
     super(props);
     this.state = {
       name: props.name, 
-      depProjects: props.depProjects
    }
        
     
@@ -29,8 +28,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <Content ><Title name={this.state.name} ></Title>{this.state.depProjects.length}</Content>
-
+      <Content ><Title name={this.state.name} ></Title></Content>
     );
   }
 }

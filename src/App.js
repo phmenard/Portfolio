@@ -5,14 +5,30 @@ import './App.css';
 import Header from './components/header/Header';
 import MainContent from './components/main_content/MainContainer';
 
-import Me from './my_objects/me';
+import Me, {setDeployedProject} from './my_objects/me';
+
+const projectOne  = {
+  name: 'Hi',
+  gitHub: 'yep',
+  liveLink: 'ok'
+}
+
+const projectTwo  = {
+  name: 'It all right ',
+  gitHub: 'sure',
+  liveLink: 'love it react is cool'
+}
+
 
 function App() {
+  setDeployedProject(projectOne);
+  setDeployedProject(projectTwo);
   return (
     <div className="App">
       <header >
-        <Header name={Me.name} depProjects={Me.deployedProjects}/>
-        <MainContent />
+        {console.log(Me)}
+        <Header name={Me.name} />
+        <MainContent deployedProjects={Me.deployedProjects}/>
          
       </header>
     </div>

@@ -10,11 +10,11 @@ class Header extends React.Component {
         super(props);
         this.state = {
             name: props.name,
-            depProjects: props.depProjects
+            depProjects: props.deployedProjects
         }
 
 
-    }
+    }            
 
     componentDidMount() {
         this.setState(state => ({
@@ -28,7 +28,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Content ><H1>Hello</H1><div>World !</div></Content>
+            <Content ><H1>{this.state.depProjects.length}</H1><div>World !</div></Content>
 
         );
     }

@@ -4,7 +4,7 @@ export const Content = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: red;
+  background-color: pink;
   color: blue;
 
 `;
