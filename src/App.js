@@ -28,7 +28,7 @@ function App() {
       <header >
         {console.log(Me)}
         <Header name={Me.name} />
-        <MainContent deployedProjects={Me.deployedProjects}/>
+        <MainContent deployedProjects={Me.deployedProjects} avitar={Me.avitar}/>
          
       </header>
     </div>

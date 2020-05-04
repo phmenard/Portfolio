@@ -10,7 +10,8 @@ class Header extends React.Component {
         super(props);
         this.state = {
             name: props.name,
-            depProjects: props.deployedProjects
+            deployedProjects: props.deployedProjects,
+            avitar: props.avitar
         }
 
 
@@ -28,7 +29,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Content ><H1>{this.state.depProjects.length}</H1><div>World !</div></Content>
+            <Content ><img className="img" src={this.state.avitar} alt="Girl in a jacket"></img><H1>{this.state.deployedProjects.length}</H1><div>Hello World !</div></Content>
 
         );
     }
