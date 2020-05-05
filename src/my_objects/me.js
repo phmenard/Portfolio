@@ -1,12 +1,6 @@
-const deployedProject = {
-    name: 'Hi',
-    gitHub: 'yep',
-    liveLink: 'ok'
-}
+/*const depProjects = [deployedProject, deployedProject];*/
+import projects from './deployedProject'
 
-
-
-const depProjects = [deployedProject, deployedProject];
 const favoriteMovies = ['Halt and Catch Fire', 'Pirates of Sylicon Vally', 'Sillicon Vally'];
 
 export const Me = {
@@ -19,14 +13,14 @@ export const Me = {
     deployedProjects: [],
     projects: [], 
     favoriteMovies: favoriteMovies
-
+                      
  }
 
 
 export function setDeployedProject(project){
-    depProjects.name = project.name;
-    depProjects.gitHub = project.gitHub;
-    depProjects.liveLink = project.liveLink;
+    project.name = project.name;
+    project.gitHub = project.gitHub;
+    project.liveLink = project.liveLink;
     Me.deployedProjects.push(project);
 }
 

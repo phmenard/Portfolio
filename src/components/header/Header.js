@@ -28,7 +28,9 @@ class Header extends React.Component {
 
   render() {
     return (
-      <Content ><Title name={this.state.name} ></Title></Content>
+      <div className='headerContainer'>
+        <Content ><Title name={this.state.name} ></Title></Content>
+        </div>
     );
   }
 }

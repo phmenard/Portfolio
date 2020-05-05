@@ -29,8 +29,9 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Content ><img className="img" src={this.state.avitar} alt="Girl in a jacket"></img><H1>{this.state.deployedProjects.length}</H1><div>Hello World !</div></Content>
-
+            <div className='mainContainer'>
+            <Content ><img className="img" src={this.state.avitar} alt="hacker"></img><H1>{this.state.deployedProjects.length}</H1><div>Hello World !</div></Content>
+            </div>
         );
     }
 }
